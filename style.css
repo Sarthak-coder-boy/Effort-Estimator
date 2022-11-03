@@ -1,0 +1,91 @@
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+ 
+  .enav{
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+  .card1{
+    margin-bottom: 80px;
+  }
+  .quotes  {
+    margin-top:100px;
+    width: 80vw;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 2;
+  }
+  
+  .quotes .box1   {
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+    min-height: 50vh;  /* to operate the height of card */
+    background: #f5f5f5;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 50px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+  }
+ 
+  .quotes .box1 p {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .quotes .box1 h2 {
+    /* position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 5%;
+    right: 10%;
+    font-size: 1.5rem; */
+    text-align: center;
+  }
+  
+  .quotes .box1:hover {
+    color: #f2f2f2;
+    box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+  }
+  
+  .quotes .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    pointer-events: none;
+    width: 100%;
+    height: 150%;
+    overflow: hidden;
+  }
+  
+  .quotes .box1.box2:hover,
+  .quotes .box1.box2:hover ~ .bg {
+    opacity: 1;
+    background: #632c65;
+    background: -moz-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
+    background: -webkit-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
+    background: linear-gradient(135deg, #632c65 15%, #56a5e2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#632c65', endColorstr='#56a5e2',GradientType=1 );
+  }
+  @media (max-width:680px) {
+    .quotes .box1 {
+        min-height: 100vh;
+    }
+}

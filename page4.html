@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <title>Page4</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="page4.css">
+</head>
+
+<body>
+    <!-- <div class="overlay"></div> -->
+    <div class="stars" ></div>
+    <div class="starts2" ></div>
+    <div class="stars3" ></div>
+    <main class="main">
+        <section class="contact">
+          
+            <h2 class="sub-title">Formula : &nbsp;&nbsp; Effort = a<sub>1 </sub>(KLOC) <sup>a<sub>2</sub> </sup>* PM
+        </h2>
+    <h3 class="sub-title">
+        <p>a<sub>1 </sub> &nbsp;and &nbsp;a<sub>2</sub>  &nbsp;=&nbsp;  constants , which depends on category of software project </p>
+        <ul>
+            <li>Organic : &nbsp;&nbsp;&nbsp;a<sub>1 </sub> = 2.4 &nbsp;&nbsp;and &nbsp;&nbsp; a<sub>2</sub> = 1.05</li>
+            <li>Semi Detached : &nbsp;&nbsp;&nbsp;a<sub>1 </sub> = 3.0 &nbsp;&nbsp;and &nbsp;&nbsp; a<sub>2</sub> = 1.12</li>
+            <li>Embedded : &nbsp;&nbsp;&nbsp;a<sub>1 </sub> = 3.6 &nbsp;&nbsp;and &nbsp;&nbsp; a<sub>2</sub> = 1.20</li>
+        </ul>
+        <br>
+       
+    <p>KLOC &nbsp;&nbsp;&nbsp;=&nbsp;&nbsp; Size of lines in kilo lines of code</p>
+   
+    <p>PM  &nbsp;&nbsp;&nbsp;=&nbsp;&nbsp; Person-Months , it is the unit of effort put in the development of project</p>
+    </h3>   
+   
+    <div class="container">
+        <div class="input-control">
+            <label>
+                KLOC :<input type="text" id="kloc" placeholder="Enter KLOC">
+            </label>
+        </div>
+    
+        <div class="input-control controls">
+            <label for="method_add">
+                    <input type="radio" name="method" id="org" value="org" >
+                    Organic
+            </label>
+            <label for="method_sub">
+                    <input type="radio" name="method" id="semi" value="semi">
+                   Semi Detached
+            </label>
+            <label for="method_mul">
+                    <input type="radio" name="method" id="emb" value="emb">
+                   Embedded
+            </label>
+           
+        </div>
+    
+        <div class="input-control button">
+            <button id="calculate">Calculate</button>
+        </div>
+    </div>
+    <div class="container result">
+        Answer
+        <p class="answer">0 PM</p>
+    </div>
+    </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
