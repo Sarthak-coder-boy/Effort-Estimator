@@ -1,5 +1,5 @@
 
-var btn = document.querySelector('#calculate');
+var btn =document.querySelector('#calculate');
 
 btn.addEventListener ('click', function () {
 	
